@@ -22,7 +22,7 @@
             <iframe src="https://www.google.com/maps/d/u/2/embed?mid=16hEpU3gdoHf34bOzf9CFdVP9WY-xIFM&ehbc=2E312F"></iframe>
         </main>
         <footer>
-            <p>Copyright &copy; 2022, Plöhnen Software</p>
+            <p>Copyright © 2022, Plöhnen Software</p>
         </footer>
     </div>
 </template>
