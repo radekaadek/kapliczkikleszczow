@@ -22,7 +22,7 @@
             <iframe src="https://www.google.com/maps/d/u/2/embed?mid=16hEpU3gdoHf34bOzf9CFdVP9WY-xIFM&ehbc=2E312F"></iframe>
         </main>
         <footer>
-            <!-- <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script>, Plöhnen Software</p> -->
+            <p>Copyright &copy;, Plöhnen Software</p>
         </footer>
     </div>
 </template>
