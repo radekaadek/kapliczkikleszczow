@@ -15,7 +15,7 @@
                     <a href="">
                         <li>Zgłoś Kapliczkę</li>
                     </a>
-                    <a href="">
+                    <a href="/contact">
                         <li>Kontakt</li>
                     </a>
                 </ul>
