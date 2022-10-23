@@ -6,13 +6,13 @@
                     <h1>e<span>-kapliczki.pl</span></h1>
                 </div>
                 <ul class="navigation">
-                    <a href="">
+                    <a href="/">
                         <li>Strona Główna</li>
                     </a>
-                    <a href="">
+                    <a href="/">
                         <li>O Stronie</li>
                     </a>
-                    <a href="">
+                    <a href="/">
                         <li>Zgłoś Kapliczkę</li>
                     </a>
                     <a href="/contact">
