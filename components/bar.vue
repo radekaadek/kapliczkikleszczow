@@ -1,27 +1,37 @@
-<template><header>
-    <div class="inner_header">
-        <div class="logo_container">
-            <h1>e<span>-kapliczki.pl</span></h1>
+<template>
+    <header>
+        <div class="inner_header">
+            <div class="logo_container">
+                <h1>e<span>-kapliczki.pl</span></h1>
+            </div>
+            <ul class="navigation">
+                <a href="/">
+                    <li>Strona Główna</li>
+                </a>
+                <a href="/">
+                    <li>O Stronie</li>
+                </a>
+                <a href="/">
+                    <li>Zgłoś Kapliczkę</li>
+                </a>
+                <a href="/contact">
+                    <li>Kontakt</li>
+                </a>
+            </ul>
         </div>
-        <ul class="navigation">
-            <a href="/">
-                <li>Strona Główna</li>
-            </a>
-            <a href="/">
-                <li>O Stronie</li>
-            </a>
-            <a href="/">
-                <li>Zgłoś Kapliczkę</li>
-            </a>
-            <a href="/contact">
-                <li>Kontakt</li>
-            </a>
-        </ul>
-    </div>
-</header></template>
+    </header>
+</template>
  
- <style scoped>
- header {
+<style scoped>
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header {
     width: 100%;
     height: 100px;
     background: linear-gradient(to right, #00093c, #2d0b00);

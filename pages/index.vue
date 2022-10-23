@@ -1,8 +1,9 @@
 <template>
     <div>
-       <Bar />
+        <Bar />
         <main>
-            <iframe title ="map" src="https://www.google.com/maps/d/u/2/embed?mid=16hEpU3gdoHf34bOzf9CFdVP9WY-xIFM&ehbc=2E312F"></iframe>
+            <iframe title="map"
+                src="https://www.google.com/maps/d/u/2/embed?mid=16hEpU3gdoHf34bOzf9CFdVP9WY-xIFM&ehbc=2E312F"></iframe>
         </main>
         <Foo />
     </div>
