@@ -41,8 +41,7 @@ export default {
                 {
                     hid: 'description',
                     name: 'description',
-                    content: 'This is the contact page',
-                    charset: 'UTF-8'
+                    content: 'This is the contact page'
                 }
             ]
         }

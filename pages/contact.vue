@@ -21,17 +21,19 @@
                 </ul>
             </div>
         </header>
-        <h1>Contact</h1>
-        <p>Send us a message</p>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="contact">
+            <h1>Contact</h1>
+            <p>Send us a message</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </div>
 </template>
 
@@ -142,5 +144,14 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px;
+}
+
+.contact {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 </style>
