@@ -21,9 +21,9 @@
             </div> -->
             <iframe src="https://www.google.com/maps/d/u/2/embed?mid=16hEpU3gdoHf34bOzf9CFdVP9WY-xIFM&ehbc=2E312F"></iframe>
         </main>
-        <footer>
+        <div class="footer">
             <p>Copyright © 2022, Plöhnen Software</p>
-        </footer>
+        </div>
     </div>
 </template>
 
@@ -116,7 +116,7 @@ iframe{
     width: 100vw;
     height: 100%;
 } 
-footer{
+.footer{
     text-align: center;
     background-color: #333;
     color: white;
