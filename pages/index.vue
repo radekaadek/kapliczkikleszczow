@@ -20,10 +20,14 @@ export default {
                 {
                     hid: 'description',
                     name: 'description',
-                    content: 'This is the contact page'
+                    content: 'This is the main page'
                 }
-            ]
+            ],
+            link: [
+            { rel: 'icon', type: 'image', href: '/static/favicon.svg' }
+          ]
         }
+        
     }
 }
 </script>
