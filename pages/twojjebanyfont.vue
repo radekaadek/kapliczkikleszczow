@@ -25,6 +25,6 @@ export default {
 
 <style>
 h1 {
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Varela Round';
 }
 </style>

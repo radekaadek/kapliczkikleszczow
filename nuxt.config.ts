@@ -6,16 +6,16 @@ export default defineNuxtConfig({
         link: [
             {
                 rel: 'preconnect',
-                href: 'https://fonts.googleapis.com/%22%3E'
+                href: 'https://fonts.googleapis.com'
             },
             {
                 rel: 'preconnect',
-                href: 'https://fonts.gstatic.com/',
+                href: 'hthttps://fonts.gstatic.comtps://fonts.gstatic.com/',
                 crossorigin: true
             },
             {
                 rel: 'stylesheet',
-                href: 'https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap'
+                href: 'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'
             }
         ]
     }
