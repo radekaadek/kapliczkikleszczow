@@ -8,7 +8,7 @@
                 <a href="/">
                     <li>Strona Główna</li>
                 </a>
-                <a href="/">
+                <a href="/3d">
                     <li>O Stronie</li>
                 </a>
                 <a href="/">
