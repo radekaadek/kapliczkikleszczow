@@ -4987,10 +4987,10 @@
     "source-map" "~0.7.2"
     "source-map-support" "~0.5.20"
 
-"three@^0.100.0":
-  "integrity" "sha512-/lN2rdE1OqIwJr4/HcSaOisiCY0uVA0sqPpbCG5nil2uICEdS0LfGwSVYTtZDsIpR76r3++h5H3Hzg5D+SJBRQ=="
-  "resolved" "https://registry.npmjs.org/three/-/three-0.100.0.tgz"
-  "version" "0.100.0"
+"three@^0.146.0":
+  "integrity" "sha512-1lvNfLezN6OJ9NaFAhfX4sm5e9YCzHtaRgZ1+B4C+Hv6TibRMsuBAM5/wVKzxjpYIlMymvgsHEFrrigEfXnb2A=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.146.0.tgz"
+  "version" "0.146.0"
 
 "time-fix-plugin@^2.0.7":
   "integrity" "sha512-uVFet1LQToeUX0rTcSiYVYVoGuBpc8gP/2jnlUzuHMHe+gux6XLsNzxLUweabMwiUj5ejhoIMsUI55nVSEa/Vw=="
