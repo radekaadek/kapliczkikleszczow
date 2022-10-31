@@ -38,23 +38,25 @@ header {
 }
 
 .inner_header {
-    width: 60%;
+    width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
 .logo_container {
     height: 100%;
-    display: table;
-    float: left;
+    flex-grow: 1;
 }
 
 .logo_container h1 {
     color: white;
     height: 100%;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Varela Round', sans-serif;
     font-size: 40px;
     font-weight: 800;
@@ -65,14 +67,12 @@ header {
 }
 
 .navigation {
-    float: right;
+    flex-grow:1;
     height: 100%;
 }
 
 .navigation a {
     height: 100%;
-    display: table;
-    float: left;
     padding: 0px 20px;
 }
 
@@ -81,8 +81,9 @@ header {
 }
 
 .navigation a li {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     color: white;
     font-family: 'Arial';
