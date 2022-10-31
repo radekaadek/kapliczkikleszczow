@@ -9,6 +9,7 @@
     "nuxt3": "latest"
   },
   "dependencies": {
-    "three": "^0.146.0"
+    "three": "^0.146.0",
+    "vue-3d-loader": "^2.1.2"
   }
 }
