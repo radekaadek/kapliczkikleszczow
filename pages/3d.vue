@@ -1,30 +1,27 @@
 <template>
-    <div>
-        <Viewer />
-    </div>
 </template>
 
 <script lang="ts"></script>
 
 <script>
-export default {
-    head() {
-        return {
-            title: 'Kontakt',
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: 'This is the contact page',
-                    charset: 'UTF-8'
-                }
-            ],
-            link: [
-            { rel: 'icon', type: 'image', href: '/static/favicon.svg' }
-          ]
-        }
-    }
-}
+import Vue from 'vue';
+Vue.prototype = window;
+
+new Vue({
+    el: 'root',
+    template: '<Viever/>',
+    components: {Viever}
+});
+// const vm = new Vue({
+//   template: '<Viever />',
+//   created(){
+//     console.log('Created');
+//   },
+//   mounted(){
+//     console.log('Mounted');
+//   }
+// });
+// vm.$mount('root');
 </script>
 
 <style>
