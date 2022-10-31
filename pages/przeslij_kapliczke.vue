@@ -18,7 +18,12 @@ export default {
         }).addTo(map);
 
         const marker = L.marker([51.216938, 19.302464]).addTo(map)
-            .bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+            .bindPopup('<b>Typ obiektu</b><br />').openPopup();
+        
+        var popup = L.popup()
+            .setLatLng([51.216938, 19.302464])
+            .setContent("Wybierz miejsce kapliczki na mapie")
+            .openOn(map);
 
         function onMapClick(e) {
             popup
