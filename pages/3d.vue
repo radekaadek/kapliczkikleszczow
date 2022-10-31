@@ -1,15 +1,27 @@
+<!-- create empty vue page -->
 <template>
-    <model-gltf src="/models/Duck.gltf"></model-gltf>
+    <div>
+        <Bar />
+        <h1>3D</h1>
+    </div>
 </template>
 
-<script lang ="ts"></script>
+<script lang="ts"></script>
+
 <script>
-import { ModelGltf } from 'vue-3d-model';
 export default {
-    components: { ModelGltf }
+    head() {
+        return {
+            title: '3D',
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'This is the 3D page',
+                    charset: 'UTF-8'
+                }
+            ]
+        }
+    }
 }
 </script>
-
-<style>
-
-</style>
