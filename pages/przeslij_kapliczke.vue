@@ -1,10 +1,11 @@
 <template>
-  <foo></foo>
-
-  <!-- choose a point on a map -->
-  <div id="map"></div>
-
-  <Bar></Bar>
+    <div>
+        <Bar />
+        <main>
+            <div id="map"></div>
+        </main>
+        <Foo />
+    </div>
 </template>
 
 <script>
@@ -19,7 +20,7 @@ export default {
 
         const marker = L.marker([51.216938, 19.302464]).addTo(map)
             .bindPopup('<b>Typ obiektu</b><br />').openPopup();
-        
+
         var popup = L.popup()
             .setLatLng([51.216938, 19.302464])
             .setContent("Wybierz miejsce kapliczki na mapie")
@@ -37,15 +38,18 @@ export default {
     head: {
         title: 'Przeslij kapliczke',
         link: [
-            { rel: 'stylesheet',
-              href: 'https://unpkg.com/leaflet@1.9.2/dist/leaflet.css',
-              integrity: 'sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=', 
-              crossorigin: "" }
+            {
+                rel: 'stylesheet',
+                href: 'https://unpkg.com/leaflet@1.9.2/dist/leaflet.css',
+                integrity: 'sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=',
+                crossorigin: ""
+            }
         ],
         script: [
-            { src: 'https://unpkg.com/leaflet@1.9.2/dist/leaflet.js',
-              integrity: 'sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=',
-              crossorigin: ""
+            {
+                src: 'https://unpkg.com/leaflet@1.9.2/dist/leaflet.js',
+                integrity: 'sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=',
+                crossorigin: ""
             }
         ]
     }
@@ -53,5 +57,8 @@ export default {
 </script>
 
 <style>
-#map { width: 600px; height: 400px;}
+#map {
+    width: 600px;
+    height: 400px;
+}
 </style>
