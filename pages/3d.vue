@@ -7,23 +7,26 @@
 import Vue from 'vue';
 Vue.prototype = window;
 
-new Vue({
-    el: 'root',
-    template: '<Viever/>',
-    components: {Viever}
-});
-// const vm = new Vue({
-//   template: '<Viever />',
-//   created(){
-//     console.log('Created');
-//   },
-//   mounted(){
-//     console.log('Mounted');
-//   }
-// });
-// vm.$mount('root');
+export default {
+    mounted() {
+        import SceneInit from '@/SceneInit.js'
+
+        const test = new SceneInit('myThreeJsCanvas');
+        test.initialize();
+        test.animate();
+        let loadedModel;
+        const glftLoader = new GLTFLoader();
+
+        glftLoader.load('./models/Duck.gltf', (gltfScene) => {
+            loadedModel = gltfScene;
+            gltfScene.scene.rotation.y = Math.PI / 8;
+            gltfScene.scene.position.y = 3;
+            gltfScene.scene.scale.set(10, 10, 10);
+            test.scene.add(gltfScene.scene);
+        });
+    },
+    head: {
+        title: '3D',
+    }
+}
 </script>
-
-<style>
-
-</style>
