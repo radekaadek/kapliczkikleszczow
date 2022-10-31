@@ -18,6 +18,9 @@
                     <li>Kontakt</li>
                 </a>
             </ul>
+            <div class="logo_kleszczow">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/POL_gmina_Kleszcz%C3%B3w_COA.svg" alt="logo gminy kleszczów">   
+            </div>
         </div>
     </header>
 </template>
@@ -34,7 +37,7 @@
 header {
     width: 100%;
     height: 100px;
-    background: linear-gradient(to right, #00093c, #2d0b00);
+    background: linear-gradient(to right, #081562, #4e0808);
 }
 
 .inner_header {
@@ -67,17 +70,15 @@ header {
 }
 
 .navigation {
-    flex-grow:1;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
     height: 100%;
 }
 
 .navigation a {
     height: 100%;
     padding: 0px 20px;
-}
-
-.navigation a:last-child {
-    padding-right: 0;
 }
 
 .navigation a li {
@@ -89,5 +90,12 @@ header {
     font-family: 'Arial';
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.logo_kleszczow {
+    height: 100%;
+    padding: 0.6vh;
+    display: flex;
+
 }
 </style>
