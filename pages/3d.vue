@@ -1,32 +1,27 @@
+<!-- create empty vue page -->
 <template>
+    <div>
+        <Bar />
+        <h1>3D</h1>
+    </div>
 </template>
 
 <script lang="ts"></script>
 
 <script>
-import Vue from 'vue';
-Vue.prototype = window;
-
 export default {
-    mounted() {
-        import SceneInit from '@/SceneInit.js'
-
-        const test = new SceneInit('myThreeJsCanvas');
-        test.initialize();
-        test.animate();
-        let loadedModel;
-        const glftLoader = new GLTFLoader();
-
-        glftLoader.load('./models/Duck.gltf', (gltfScene) => {
-            loadedModel = gltfScene;
-            gltfScene.scene.rotation.y = Math.PI / 8;
-            gltfScene.scene.position.y = 3;
-            gltfScene.scene.scale.set(10, 10, 10);
-            test.scene.add(gltfScene.scene);
-        });
-    },
-    head: {
-        title: '3D',
+    head() {
+        return {
+            title: '3D',
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'This is the 3D page',
+                    charset: 'UTF-8'
+                }
+            ]
+        }
     }
 }
 </script>

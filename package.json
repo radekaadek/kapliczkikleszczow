@@ -7,8 +7,5 @@
   },
   "devDependencies": {
     "nuxt3": "latest"
-  },
-  "dependencies": {
-    "three": "^0.146.0"
   }
 }
