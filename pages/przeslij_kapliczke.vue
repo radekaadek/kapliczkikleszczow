@@ -54,7 +54,7 @@ export default {
         ]
     }
 }
-</script>
+</script>Kierede
 
 <style>
 #map {
