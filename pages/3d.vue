@@ -1,27 +1,12 @@
 <template>
+    <model-gltf src="/models/Duck.gltf"></model-gltf>
 </template>
 
-
-<script lang="ts"></script>
-
+<script lang ="ts"></script>
 <script>
+import { ModelGltf } from 'vue-3d-model';
 export default {
-    head() {
-        return {
-            title: '3D-ev',
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: 'This is the 3D page',
-                    charset: 'UTF-8'
-                }
-            ],
-            link: [
-            { rel: 'icon', type: 'image', href: '/static/favicon.svg' }
-          ]
-        }
-    }
+    components: { ModelGltf }
 }
 </script>
 
