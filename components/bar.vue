@@ -36,7 +36,7 @@
 
 header {
     width: 100%;
-    height: max(100px, 9vh);
+    height: max(100px, 2vh);
     background: linear-gradient(to right, #081562, #4e0808);
 }
 
