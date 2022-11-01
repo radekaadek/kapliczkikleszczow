@@ -10,7 +10,6 @@
 
 <script>
 export default {
-    ssr: false,
     head: {
         title: 'Zgłoś kapliczkę',
         link: [
