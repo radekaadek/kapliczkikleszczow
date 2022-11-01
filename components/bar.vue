@@ -10,11 +10,7 @@
                 </a>
                 <a href="/3d">
                     <li>O Stronie</li>
-<<<<<<< HEAD
-                </a> -->
-=======
                 </a>
->>>>>>> 42e84b443acd582d667ef1fb48e7bae7a9a247ca
                 <a href="/zglos_kapliczke">
                     <li>Zgłoś Kapliczkę</li>
                 </a>

@@ -1,6 +1,7 @@
 <template>
     <div>
         <Bar/>
+        <h1>Zgłoś kapliczkę</h1>
         <main>
             <div id="map"></div>
         </main>
@@ -56,6 +57,12 @@ export default {
 </script>
 
 <style>
+
+h1 {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
 
 #map {
     display: flex;
