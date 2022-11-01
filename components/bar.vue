@@ -111,7 +111,5 @@ header {
         display: none;
     }
 }
-.i4ewOd-pzNkMb-haAclf {
-    background: linear-gradient(to right, rgb(8, 21, 98), rgb(78, 8, 8));
-}
+
 </style>
