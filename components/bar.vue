@@ -2,7 +2,7 @@
     <header>
         <div class="inner_header">
             <div class="logo_container">
-                <h1>e<span>-kapliczki</span></h1>
+                <img class="logo" src="/static/e-kapliczki.svg" alt="logo">
             </div>
             <ul class="navigation">
                 <a href="/">
@@ -51,7 +51,11 @@ header {
 
 .logo_container {
     height: 100%;
+    padding: 0.6vw;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo_container h1 {
@@ -94,14 +98,33 @@ header {
 
 .logo_kleszczow {
     height: 100%;
-    padding: 0.6vh;
+    padding: 0.6vw;
     display: flex;
 
 }
+@media screen and (max-width: 1200px){
+    .logo{
+        width: clamp(200px, 33vw, 361px);
+    }
+}
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 950px){
     .logo_kleszczow{
         display: none;
-    } 
+    }
+    .navigation {
+        justify-content: space-evenly;
+    }
+    .navigation a {
+    height: 100%;
+    padding: 0px 2vw;
 }
+}
+
+@media screen and (max-width: 750px){
+    .logo_container{
+        display: none;
+    }
+}
+
 </style>
