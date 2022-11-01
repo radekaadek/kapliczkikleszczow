@@ -11,7 +11,7 @@
                 <!-- <a href="/info">
                     <li>O Stronie</li>
                 </a> -->
-                <a href="/zglos">
+                <a href="/zglos_kapliczke">
                     <li>Zgłoś Kapliczkę</li>
                 </a>
                 <a href="/kontakt">
@@ -35,22 +35,13 @@
 }
 
 header {
-<<<<<<< HEAD
-    width: 100vw;
-    height: 12vmin;
-=======
     width: 100%;
     height: 100px;
->>>>>>> dupa
     background: linear-gradient(to right, #081562, #4e0808);
 }
 
 .inner_header {
-<<<<<<< HEAD
-    width: 100vw;
-=======
     width: 100%;
->>>>>>> dupa
     height: 100%;
     display: flex;
     align-items: center;
@@ -70,8 +61,12 @@ header {
     align-items: center;
     justify-content: center;
     font-family: 'Varela Round', sans-serif;
-    font-size: 2vw;
-    
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.logo_container h1 span {
+    font-weight: 200;
 }
 
 .navigation {
@@ -83,11 +78,7 @@ header {
 
 .navigation a {
     height: 100%;
-<<<<<<< HEAD
-    padding: 0vw 1vh;
-=======
     padding: 0px 20px;
->>>>>>> dupa
 }
 
 .navigation a li {
@@ -97,7 +88,7 @@ header {
     height: 100%;
     color: white;
     font-family: 'Arial';
-    font-size: min(2vw, 25px);
+    font-size: 16px;
     text-transform: uppercase;
 }
 

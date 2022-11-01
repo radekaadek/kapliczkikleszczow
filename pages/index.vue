@@ -54,6 +54,5 @@ iframe {
     border: none;
     width: 100vw;
     height: 100%;
-    border: none;
 }
 </style>
