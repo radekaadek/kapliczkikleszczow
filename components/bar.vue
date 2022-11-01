@@ -37,7 +37,7 @@
 header {
     width: 100%;
     height: max(100px, 2vh);
-    background: linear-gradient(to right, #081562, #4e0808);
+    background: linear-gradient(to right, rgb(8, 21, 98), rgb(78, 8, 8));
 }
 
 .inner_header {
