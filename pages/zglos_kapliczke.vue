@@ -11,30 +11,6 @@
 
 <script>
 export default {
-    mounted() {
-        const map = L.map('map').setView([51.223019, 19.304054], 13);
-
-        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-        }).addTo(map);
-
-        const marker = L.marker([51.216938, 19.302464]).addTo(map)
-            .bindPopup('<b>Kleszczów</b>').openPopup();
-
-        var popup = L.popup()
-            .setLatLng([51.216938, 19.302464])
-            .setContent("Naciśnij na miejsce, w którym znajduje się kapliczka")
-            .openOn(map);
-
-        function onMapClick(e) {
-            popup
-                .setLatLng(e.latlng)
-                .setContent(`Współrzędne: ${e.latlng.toString()} <input type="button" value="Zgłoś kapliczkę" class="butonik"/>`)
-                .openOn(map);
-        }
-
-        map.on('click', onMapClick);
-    },
     head: {
         title: 'Zgłoś kapliczkę',
         link: [
@@ -52,7 +28,31 @@ export default {
                 crossorigin: ""
             }
         ]
-    }
+    },
+    mounted() {
+        const map = L.map('map').setView([51.223019, 19.304054], 13);
+
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        const marker = L.marker([51.216938, 19.302464]).addTo(map)
+            .bindPopup('<b>Kleszczów</b>').openPopup();
+
+        let popup = L.popup()
+            .setLatLng([51.216938, 19.302464])
+            .setContent("Naciśnij na miejsce, w którym znajduje się kapliczka")
+            .openOn(map);
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent(`Współrzędne: ${e.latlng.toString()} <input type="button" value="Zgłoś kapliczkę" class="butonik"/>`)
+                .openOn(map);
+        }
+
+        map.on('click', onMapClick);
+    },
 }
 </script>
 

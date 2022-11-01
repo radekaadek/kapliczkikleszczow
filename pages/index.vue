@@ -17,10 +17,11 @@ export default {
         return {
             title: 'e-kapliczki',
             meta: [
-                {
+            {
                     hid: 'description',
                     name: 'description',
-                    content: 'This is the main page'
+                    content: 'This is the contact page',
+                    charset: 'UTF-8'
                 }
             ],
             link: [
