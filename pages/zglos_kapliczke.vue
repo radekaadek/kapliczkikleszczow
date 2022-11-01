@@ -37,7 +37,7 @@ export default {
             js.src = path;
             document.body.appendChild(js);
         }
-        includeJS("https://unpkg.com/leaflet@1.9.2/dist/leaflet.js");
+        includeJS("/lib/leaflet.js");
         
         console.log('mounted')
         const map = L.map('map').setView([51.223019, 19.304054], 13);
