@@ -14,7 +14,7 @@
                 <a href="/zglos">
                     <li>Zgłoś Kapliczkę</li>
                 </a>
-                <a href="/contact">
+                <a href="/kontakt">
                     <li>Kontakt</li>
                 </a>
             </ul>
@@ -97,5 +97,11 @@ header {
     padding: 0.6vh;
     display: flex;
 
+}
+
+@media screen and (max-width: 800px){
+    .logo_kleszczow{
+        display: none;
+    } 
 }
 </style>
