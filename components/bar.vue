@@ -2,7 +2,7 @@
     <header>
         <div class="inner_header">
             <div class="logo_container">
-                <img class="logo" src="/static/e-kapliczki.svg" alt="logo">
+                <Logo />
             </div>
             <ul class="navigation">
                 <a href="/">
