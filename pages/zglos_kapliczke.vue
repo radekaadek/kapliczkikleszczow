@@ -30,8 +30,8 @@ export default {
         ]
     },
     mounted() {
+        console.log('mounted')
         const map = L.map('map').setView([51.223019, 19.304054], 13);
-
         const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
         }).addTo(map);
@@ -50,7 +50,7 @@ export default {
                 .setContent(`Współrzędne: ${e.latlng.toString()} <input type="button" value="Zgłoś kapliczkę" class="butonik"/>`)
                 .openOn(map);
         }
-
+        console.log('mounted2')
         map.on('click', onMapClick);
     },
 }
