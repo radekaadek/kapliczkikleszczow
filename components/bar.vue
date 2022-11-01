@@ -2,16 +2,16 @@
     <header>
         <div class="inner_header">
             <div class="logo_container">
-                <h1>e<span>-kapliczki.pl</span></h1>
+                <h1>e<span>-kapliczki</span></h1>
             </div>
             <ul class="navigation">
                 <a href="/">
                     <li>Strona Główna</li>
                 </a>
-                <a href="/3d">
+                <!-- <a href="/info">
                     <li>O Stronie</li>
-                </a>
-                <a href="/">
+                </a> -->
+                <a href="/zglos">
                     <li>Zgłoś Kapliczkę</li>
                 </a>
                 <a href="/contact">

@@ -19,17 +19,17 @@ export default {
         }).addTo(map);
 
         const marker = L.marker([51.216938, 19.302464]).addTo(map)
-            .bindPopup('<b>Typ obiektu</b><br />').openPopup();
+            .bindPopup('<b>Kleszczów</b>').openPopup();
 
         var popup = L.popup()
             .setLatLng([51.216938, 19.302464])
-            .setContent("Wybierz miejsce kapliczki na mapie")
+            .setContent("Naciśnij na miejsce, w którym znajduje się kapliczka")
             .openOn(map);
 
         function onMapClick(e) {
             popup
                 .setLatLng(e.latlng)
-                .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                .setContent(`Współrzędne: ${e.latlng.toString()} <input type="button" value="Zgłoś kapliczkę" class="butonik"/>`)
                 .openOn(map);
         }
 
@@ -54,11 +54,17 @@ export default {
         ]
     }
 }
-</script>Kierede
+</script>
 
 <style>
 #map {
-    width: 600px;
-    height: 400px;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    cursor: crosshair;
+}
+
+.butonik{
+    color: royalblue;
 }
 </style>
