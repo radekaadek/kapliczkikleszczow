@@ -66,6 +66,14 @@ export default {
 
 <style>
 
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 h1 {
     text-align: center;
     margin: 10px;
