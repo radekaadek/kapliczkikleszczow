@@ -84,7 +84,7 @@ header {
     height: 100%;
     color: white;
     font-family: 'Arial';
-    font-size: 2vw;
+    font-size: min(2vw, 25px);
     text-transform: uppercase;
 }
 
