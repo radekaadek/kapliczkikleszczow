@@ -2,16 +2,16 @@
     <div>
         <Bar />
         <div class="contact">
-            <h1>Contact</h1>
-            <p>Send us a message</p>
+            <h1>Kontakt</h1>
+            <p>Skontaktuj się z nami</p>
             <form>
-                <label for="name">Name</label>
+                <label for="name">Nazwa</label>
                 <input type="text" id="name" name="name" />
-                <label for="email">Email</label>
+                <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" />
-                <label for="message">Message</label>
+                <label for="message">Treść</label>
                 <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Wyślij</button>
             </form>
         </div>
     </div>

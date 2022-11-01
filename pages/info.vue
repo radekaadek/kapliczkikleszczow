@@ -2,8 +2,10 @@
     <div>
         <Bar />
         <main>
-            <iframe title="map"
-                src="https://www.google.com/maps/d/u/2/embed?mid=16hEpU3gdoHf34bOzf9CFdVP9WY-xIFM&ehbc=2E312F"></iframe>
+            <div class="container">
+                <h1></h1>
+                <p></p>
+            </div>
         </main>
         <Foo />
     </div>
@@ -15,19 +17,16 @@
 export default {
     head() {
         return {
-            title: 'e-kapliczki',
+            title: 'O stronie',
             meta: [
                 {
                     hid: 'description',
                     name: 'description',
-                    content: 'This is the main page'
+                    content: 'This is the 3D page',
+                    charset: 'UTF-8'
                 }
-            ],
-            link: [
-            { rel: 'icon', type: 'image', href: '/static/favicon.svg' }
-          ]
+            ]
         }
-        
     }
 }
 </script>
@@ -46,13 +45,16 @@ body {
 }
 
 main {
+    display: flex;
+    justify-content: center;
     height: calc(100vh - 100px - 58px);
 }
 
-iframe {
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    border: none;
+.container {
+    width: 70vw;
+    background-color: #d9d9d9;
+
 }
+
+
 </style>

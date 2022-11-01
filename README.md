@@ -1,2 +1,2 @@
 # kapliczki
-Strona do kapliczek na terenie kleszczowa i etc.
+Strona do kapliczek na terenie Kleszczowa i etc.

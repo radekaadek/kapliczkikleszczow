@@ -11,13 +11,16 @@
                 <a href="/3d">
                     <li>O Stronie</li>
                 </a>
-                <a href="/">
+                <a href="/zglos_kapliczke">
                     <li>Zgłoś Kapliczkę</li>
                 </a>
-                <a href="/contact">
+                <a href="/kontakt">
                     <li>Kontakt</li>
                 </a>
             </ul>
+            <div class="logo_kleszczow">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/POL_gmina_Kleszcz%C3%B3w_COA.svg" alt="logo gminy kleszczów">   
+            </div>
         </div>
     </header>
 </template>
@@ -32,61 +35,69 @@
 }
 
 header {
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to right, #00093c, #2d0b00);
+    width: 100vw;
+    height: 12vmin;
+    background: linear-gradient(to right, #081562, #4e0808);
 }
 
 .inner_header {
-    width: 60%;
+    width: 100vw;
     height: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
 .logo_container {
     height: 100%;
-    display: table;
-    float: left;
+    flex-grow: 1;
 }
 
 .logo_container h1 {
     color: white;
     height: 100%;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Varela Round', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.logo_container h1 span {
-    font-weight: 200;
+    font-size: 2vw;
+    
 }
 
 .navigation {
-    float: right;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
     height: 100%;
 }
 
 .navigation a {
     height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
-
-.navigation a:last-child {
-    padding-right: 0;
+    padding: 0vw 1vh;
 }
 
 .navigation a li {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     color: white;
     font-family: 'Arial';
-    font-size: 16px;
+    font-size: min(2vw, 25px);
     text-transform: uppercase;
+}
+
+.logo_kleszczow {
+    height: 100%;
+    padding: 0.6vh;
+    display: flex;
+
+}
+
+@media screen and (max-width: 800px){
+    .logo_kleszczow{
+        display: none;
+    } 
 }
 </style>
