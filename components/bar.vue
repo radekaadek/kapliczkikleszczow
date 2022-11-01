@@ -36,7 +36,7 @@
 
 header {
     width: 100%;
-    height: 100px;
+    height: max(100px, 9vh);
     background: linear-gradient(to right, #081562, #4e0808);
 }
 
@@ -58,21 +58,6 @@ header {
     align-items: center;
 }
 
-.logo_container h1 {
-    color: white;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.logo_container h1 span {
-    font-weight: 200;
-}
-
 .navigation {
     display: flex;
     justify-content: center;
@@ -92,7 +77,7 @@ header {
     height: 100%;
     color: white;
     font-family: 'Arial';
-    font-size: 16px;
+    font-size: max(16px, 1vmax);
     text-transform: uppercase;
 }
 
@@ -104,7 +89,7 @@ header {
 }
 @media screen and (max-width: 1200px){
     .logo{
-        width: clamp(200px, 33vw, 361px);
+        width: clamp(200px, 33vw, 360px);
     }
 }
 
