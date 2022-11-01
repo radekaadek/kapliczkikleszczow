@@ -2,7 +2,7 @@
     <header>
         <div class="inner_header">
             <div class="logo_container">
-                <a class ="logo"></a>
+                <img class="logo" src="/static/e-kapliczki.svg" alt="logo">
             </div>
             <ul class="navigation">
                 <a href="/">
@@ -80,13 +80,7 @@ header {
     font-size: max(16px, 1vmax);
     text-transform: uppercase;
 }
-.logo{
-    background-image: url("/static/e-kapliczki.svg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-}
+
 .logo_kleszczow {
     height: 100%;
     padding: 0.6vw;
