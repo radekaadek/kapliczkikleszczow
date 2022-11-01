@@ -74,7 +74,7 @@ h1 {
 
 #map {
     display: flex;
-    width: 100vw;
+    width: 80vw;
     height: 90vh;
     cursor: crosshair;
 }
