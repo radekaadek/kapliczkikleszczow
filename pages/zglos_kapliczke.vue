@@ -1,7 +1,6 @@
 <template>
     <div>
         <Bar/>
-        <h1>Zgłoś kapliczkę</h1>
         <main>
             <div id="map"></div>
         </main>
@@ -60,8 +59,8 @@ export default {
 
 h1 {
     text-align: center;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 10px;
+    font-size: 20px;
 }
 
 #map {
@@ -73,5 +72,12 @@ h1 {
 
 .butonik{
     color: royalblue;
+    font-size: 20px;
+    padding: 5px;
+    }
+.leaflet-popup-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 </style>
