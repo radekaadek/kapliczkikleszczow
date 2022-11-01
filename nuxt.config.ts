@@ -1,6 +1,3 @@
-import { defineNuxtConfig } from 'nuxt3'
-
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
-export default defineNuxtConfig({
-    ssr: false,
-})
+export default {
+    ssr: false // Disable Server Side rendering
+  }
