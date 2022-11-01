@@ -1,10 +1,11 @@
 <template>
     <div>
-        <Bar />
+        <Bar/>
+        <h1>Zgłoś kapliczkę</h1>
         <main>
             <div id="map"></div>
         </main>
-        <Foo />
+        <Foo/>
     </div>
 </template>
 
@@ -15,7 +16,6 @@ export default {
 
         const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
         const marker = L.marker([51.216938, 19.302464]).addTo(map)
@@ -36,7 +36,7 @@ export default {
         map.on('click', onMapClick);
     },
     head: {
-        title: 'Przeslij kapliczke',
+        title: 'Zgłoś kapliczkę',
         link: [
             {
                 rel: 'stylesheet',
@@ -54,11 +54,19 @@ export default {
         ]
     }
 }
-</script>Kierede
+</script>
 
 <style>
+
+h1 {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 #map {
-    width: 600px;
-    height: 400px;
+    width: 96vmin;
+    height: 50vmin;
+    margin: 0 auto;
 }
 </style>
