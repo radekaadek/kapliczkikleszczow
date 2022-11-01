@@ -11,10 +11,10 @@
                 <!-- <a href="/info">
                     <li>O Stronie</li>
                 </a> -->
-                <a href="/zglos">
+                <a href="/zglos_kapliczke">
                     <li>Zgłoś Kapliczkę</li>
                 </a>
-                <a href="/contact">
+                <a href="/kontakt">
                     <li>Kontakt</li>
                 </a>
             </ul>
@@ -98,4 +98,5 @@ header {
     display: flex;
 
 }
+
 </style>
