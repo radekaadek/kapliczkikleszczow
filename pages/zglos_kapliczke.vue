@@ -1,7 +1,6 @@
 <template>
     <div>
         <Bar/>
-        <h1>Zgłoś kapliczkę</h1>
         <main>
             <div id="map"></div>
         </main>
@@ -23,13 +22,13 @@ export default {
 
         var popup = L.popup()
             .setLatLng([51.216938, 19.302464])
-            .setContent("Naciśnij na miejsce, w którym znajduje się kapliczka")
+            .setContent("<h1>Naciśnij na miejsce, w którym znajduje się zgłaszana kapliczka</h1>")
             .openOn(map);
 
         function onMapClick(e) {
             popup
                 .setLatLng(e.latlng)
-                .setContent(`Współrzędne: ${e.latlng.toString()} <input type="button" value="Zgłoś kapliczkę" class="butonik"/>`)
+                .setContent(`<span>Współrzędne: ${e.latlng.toString()}</span> <input type="button" value="Zgłoś kapliczkę" class="butonik"/>`)
                 .openOn(map);
         }
 
@@ -60,8 +59,8 @@ export default {
 
 h1 {
     text-align: center;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 10px;
+    font-size: 20px;
 }
 
 #map {
@@ -73,5 +72,12 @@ h1 {
 
 .butonik{
     color: royalblue;
+    font-size: 20px;
+    padding: 5px;
+    }
+.leaflet-popup-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 </style>
