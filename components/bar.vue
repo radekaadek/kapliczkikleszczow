@@ -2,16 +2,16 @@
     <header>
         <div class="inner_header">
             <div class="logo_container">
-                <h1>e<span>-kapliczki.pl</span></h1>
+                <h1>e<span>-kapliczki</span></h1>
             </div>
             <ul class="navigation">
                 <a href="/">
                     <li>Strona Główna</li>
                 </a>
-                <a href="/3d">
+                <!-- <a href="/info">
                     <li>O Stronie</li>
-                </a>
-                <a href="/zglos_kapliczke">
+                </a> -->
+                <a href="/zglos">
                     <li>Zgłoś Kapliczkę</li>
                 </a>
                 <a href="/kontakt">
@@ -35,13 +35,22 @@
 }
 
 header {
+<<<<<<< HEAD
     width: 100vw;
     height: 12vmin;
+=======
+    width: 100%;
+    height: 100px;
+>>>>>>> dupa
     background: linear-gradient(to right, #081562, #4e0808);
 }
 
 .inner_header {
+<<<<<<< HEAD
     width: 100vw;
+=======
+    width: 100%;
+>>>>>>> dupa
     height: 100%;
     display: flex;
     align-items: center;
@@ -74,7 +83,11 @@ header {
 
 .navigation a {
     height: 100%;
+<<<<<<< HEAD
     padding: 0vw 1vh;
+=======
+    padding: 0px 20px;
+>>>>>>> dupa
 }
 
 .navigation a li {
