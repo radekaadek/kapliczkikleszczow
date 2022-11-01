@@ -2,15 +2,19 @@
     <header>
         <div class="inner_header">
             <div class="logo_container">
-                <h1>e<span>-kapliczki</span></h1>
+                <h1>e<span>-kapliczki.pl</span></h1>
             </div>
             <ul class="navigation">
                 <a href="/">
                     <li>Strona Główna</li>
                 </a>
-                <!-- <a href="/info">
+                <a href="/3d">
                     <li>O Stronie</li>
+<<<<<<< HEAD
                 </a> -->
+=======
+                </a>
+>>>>>>> 42e84b443acd582d667ef1fb48e7bae7a9a247ca
                 <a href="/zglos_kapliczke">
                     <li>Zgłoś Kapliczkę</li>
                 </a>
@@ -35,13 +39,13 @@
 }
 
 header {
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    height: 12vmin;
     background: linear-gradient(to right, #081562, #4e0808);
 }
 
 .inner_header {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     align-items: center;
@@ -61,12 +65,8 @@ header {
     align-items: center;
     justify-content: center;
     font-family: 'Varela Round', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.logo_container h1 span {
-    font-weight: 200;
+    font-size: 2vw;
+    
 }
 
 .navigation {
@@ -78,7 +78,7 @@ header {
 
 .navigation a {
     height: 100%;
-    padding: 0px 20px;
+    padding: 0vw 1vh;
 }
 
 .navigation a li {
@@ -88,7 +88,7 @@ header {
     height: 100%;
     color: white;
     font-family: 'Arial';
-    font-size: 16px;
+    font-size: 2vw;
     text-transform: uppercase;
 }
 
@@ -99,4 +99,9 @@ header {
 
 }
 
+@media screen and (max-width: 800px){
+    .logo_kleszczow{
+        display: none;
+    } 
+}
 </style>
