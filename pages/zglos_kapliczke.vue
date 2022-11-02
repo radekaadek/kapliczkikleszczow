@@ -82,7 +82,7 @@ h1 {
 
 #map {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     height: 90vh;
     cursor: crosshair;
 }
