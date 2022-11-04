@@ -64,7 +64,8 @@ export default {
   font-family: sans-serif;
 }
 
-#body_contact, #background_main {
+#body_contact,
+#background_main {
   background-image: url(https://drive.google.com/uc?export=download&id=16p-qgmyEr0JA5Av_NKa7VrtDJjramDyr);
   background-position: 0% 55%;
   background-size: 120vw;
@@ -156,7 +157,8 @@ form .action input {
   padding: 0 20px 0 22px;
   margin-right: 10px;
 }
-input, textarea{
+input,
+textarea {
   color: white;
 }
 
@@ -189,6 +191,12 @@ form .icons a:hover {
 @media (max-height: 815px) {
   #main_contact {
     height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    background-color: rgb(36, 37, 42);
   }
 }
 
