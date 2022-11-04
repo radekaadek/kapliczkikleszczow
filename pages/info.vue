@@ -32,17 +32,6 @@ export default {
 </script>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: white;
-}
 
 main {
     display: flex;
@@ -55,6 +44,4 @@ main {
     background-color: #d9d9d9;
 
 }
-
-
 </style>

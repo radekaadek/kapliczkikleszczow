@@ -1,137 +1,208 @@
 <template>
+  <body id="body_contact">
     <div>
-        <Bar />
-        <div class="contact">
-            <h1>Kontakt</h1>
-            <p>Skontaktuj się z nami</p>
-            <form>
+      <Bar />
+      <div id="background_main">
+        <main id="main_contact">
+          <form class="contact" action="">
+            <div class="title">
+              <h2>Kontakt</h2>
+            </div>
+            <div class="half">
+              <div class="item">
                 <label for="name">Nazwa</label>
-                <input type="text" id="name" name="name" />
+                <input type="text" id="name" />
+              </div>
+              <div class="item">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" />
-                <label for="message">Treść</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Wyślij</button>
-            </form>
-        </div>
+                <input type="text" id="email" />
+              </div>
+            </div>
+            <div class="full">
+              <label for="message">Wiadomość</label>
+              <textarea name="" id="message"></textarea>
+            </div>
+            <div class="action">
+              <input type="submit" value="Wyślij" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+        </main>
+      </div>
+      <Foo />
     </div>
+  </body>
 </template>
 
 <script lang="ts"></script>
 
 <script>
 export default {
-    head() {
-        return {
-            title: 'Kontakt',
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: 'This is the contact page',
-                    charset: 'UTF-8'
-                }
-            ]
-        }
-    }
-}
+  head() {
+    return {
+      title: "Kontakt",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "This is the contact page",
+          charset: "UTF-8",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+#body_contact {
+  background-color: black;
+  color: white;
 }
 
-body {
-    background-color: white;
+#background_main {
+  padding: 5vh 0 0 0;
+  background-image: url("/static/BG_contact.jpg");
+  background-position: 0% 55%;
+  background-size: 120vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: grayscale(20%);
 }
 
-header {
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to right, #00093c, #2d0b00);
+#main_contact {
+  height: calc(100vh - 5vh - 100px - 58px);
 }
-
-.inner_header {
-    width: 60%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-.logo_container {
-    height: 100%;
-    display: table;
-    float: left;
-}
-
-.logo_container h1 {
-    color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.logo_container h1 span {
-    font-weight: 200;
-}
-
-.navigation {
-    float: right;
-    height: 100%;
-}
-
-.navigation a {
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
-
-.navigation a:last-child {
-    padding-right: 0;
-}
-
-.navigation a li {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: white;
-    font-family: 'Arial';
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-main {
-    height: calc(100vh - 100px - 58px);
-}
-
-iframe {
-    display: flex;
-    width: 100vw;
-    height: 100%;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
 .contact {
-    align-content: center;
-    align-items: center;
+  background: rgba(27, 31, 34, 0.8);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+}
+
+form .title h2 {
+  letter-spacing: 3px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+form .half {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+form .half .item input {
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full {
+  margin-bottom: 24px;
+}
+
+form .full textarea {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action {
+  margin-bottom: 32px;
+}
+
+form .action input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action input[type="submit"] {
+  background: white;
+  color: black;
+}
+
+form .action input[type="reset"] {
+  color: white;
+}
+
+form .icons a {
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+}
+
+form .half .item input:focus,
+form .full textarea:focus,
+form .action input[type="reset"]:hover,
+form .icons a:hover {
+  background: rgba(255, 255, 255, 0.075);
+}
+
+@media (max-width: 960px) {
+  #background_main {
+    background-position: 50% 30%;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    height: auto;
+  }
+  form .half {
+    flex-direction: column;
+  }
+  form .half .item {
+    width: 100%;
+  }
+  form .action {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+  }
+  form .action input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 </style>

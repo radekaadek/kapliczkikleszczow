@@ -40,6 +40,7 @@ export default {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
