@@ -66,9 +66,9 @@ export default {
 
 #body_contact,
 #background_main {
-  background-image: url(https://drive.google.com/uc?export=download&id=16p-qgmyEr0JA5Av_NKa7VrtDJjramDyr);
-  background-position: 0% 55%;
-  background-size: 120vw;
+  background-image: url(https://drive.google.com/uc?export=download&id=1YWh8YtVftIuEp3Cr_upT4YTrLcU-FmxR);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
@@ -194,18 +194,18 @@ form .icons a:hover {
   }
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .navbar {
     background-color: rgb(36, 37, 42)!important;
   }
-}
+} */
 
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
   #background_main {
     background-position: 50% 30%;
     background-size: cover;
   }
-}
+} */
 
 @media (max-width: 480px) {
   #main_contact {
