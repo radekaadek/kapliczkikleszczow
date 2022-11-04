@@ -56,12 +56,12 @@ export default {
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 #body_contact {
@@ -185,6 +185,12 @@ form .full textarea:focus,
 form .action input[type="reset"]:hover,
 form .icons a:hover {
   background: rgba(255, 255, 255, 0.075);
+}
+
+@media (max-height: 815px) {
+  #main_contact {
+    height: auto;
+  }
 }
 
 @media (max-width: 960px) {
