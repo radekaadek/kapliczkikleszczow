@@ -47,6 +47,9 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .logo_container {
