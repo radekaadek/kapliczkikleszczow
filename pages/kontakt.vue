@@ -55,14 +55,22 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 #body_contact {
   background-color: black;
   color: white;
 }
 
 #background_main {
-  padding: 5vh 0 0 0;
-  background-image: url("/static/BG_contact.jpg");
+  background-image: url("https://drive.google.com/uc?export=download&id=16p-qgmyEr0JA5Av_NKa7VrtDJjramDyr");
   background-position: 0% 55%;
   background-size: 120vw;
   background-repeat: no-repeat;
@@ -71,12 +79,13 @@ export default {
 }
 
 #main_contact {
-  height: calc(100vh - 5vh - 100px - 58px);
+  height: calc(100vh - 158px);
+  padding: 50px 0;
 }
 .contact {
   background: rgba(27, 31, 34, 0.8);
   width: 640px;
-  margin: 50px auto;
+  margin: 0 auto 50px auto;
   max-width: 97%;
   border-radius: 4px;
   padding: 55px 30px;
@@ -147,10 +156,13 @@ form .action input {
   font-size: 13px;
   font-weight: 600;
   height: 44px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   outline: 0;
   padding: 0 20px 0 22px;
   margin-right: 10px;
+}
+input, textarea{
+  color: white;
 }
 
 form .action input[type="submit"] {
@@ -179,6 +191,12 @@ form .icons a:hover {
   background: rgba(255, 255, 255, 0.075);
 }
 
+@media (max-height: 815px) {
+  #main_contact {
+    height: auto;
+  }
+}
+
 @media (max-width: 960px) {
   #background_main {
     background-position: 50% 30%;
@@ -187,7 +205,7 @@ form .icons a:hover {
 }
 
 @media (max-width: 480px) {
-  main {
+  #main_contact {
     height: auto;
   }
   form .half {
