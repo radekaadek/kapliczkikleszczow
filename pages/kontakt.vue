@@ -70,7 +70,7 @@ export default {
 }
 
 #background_main {
-  background-image: url("/static/BG_contact.jpg");
+  background-image: url("https://drive.google.com/uc?export=download&id=17eBcNooeNEvy_TNxlmPvwmhb4fq9Xq3c");
   background-position: 0% 55%;
   background-size: 120vw;
   background-repeat: no-repeat;
@@ -155,10 +155,13 @@ form .action input {
   font-size: 13px;
   font-weight: 600;
   height: 44px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   outline: 0;
   padding: 0 20px 0 22px;
   margin-right: 10px;
+}
+input, textarea{
+  color: white;
 }
 
 form .action input[type="submit"] {
