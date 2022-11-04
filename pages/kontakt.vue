@@ -196,7 +196,7 @@ form .icons a:hover {
 
 @media (max-width: 1000px) {
   .navbar {
-    background-color: rgb(36, 37, 42);
+    background-color: rgb(36, 37, 42)!important;
   }
 }
 
