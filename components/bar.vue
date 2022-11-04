@@ -47,9 +47,16 @@
     padding: 0 10px 0 10px;
 }
 
+.nav-list{
+    height: 100%;
+    display: flex;
+}
+
 .nav-list .a_list_item{
+    height: 100%;
     padding: 0 20px 0 20px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list .a_list_item li{
@@ -59,7 +66,7 @@
     text-transform: uppercase;
 }
 
-.nav-list .a_list_item li:hover{
+.nav-list .a_list_item:hover li{
     color: #74b50a;
     transition: color 0.1s ease-out;
 }
@@ -79,14 +86,23 @@
 }
 
 @media screen and (max-width: 960px){
-    .ekapliczki{
+    .ekapliczki, .logo_gminy_container{
         display: none;
     }
 }
 
 @media screen and (max-width: 580px){
+    .navbar{
+        display: block;
+    }
+    .nav-list{
+        justify-content: space-around;
+    }
+    .nav-list .a_list_item{
+        padding: 0 5px 0 5px;
+    }
     .nav-list .a_list_item li{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         font-weight: bolder;
     }
 }
