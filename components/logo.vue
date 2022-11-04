@@ -56,4 +56,7 @@
    display: inline;
    fill: #ffffff
 }
+#path156{
+   fill: #74b50a;
+}
 </style>
