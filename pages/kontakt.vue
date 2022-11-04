@@ -64,18 +64,13 @@ export default {
   font-family: sans-serif;
 }
 
-#body_contact {
-  background-color: black;
-  color: white;
-}
-
-#background_main {
-  background-image: url("https://drive.google.com/uc?export=download&id=16p-qgmyEr0JA5Av_NKa7VrtDJjramDyr");
+#body_contact, #background_main {
+  background-image: url(https://drive.google.com/uc?export=download&id=16p-qgmyEr0JA5Av_NKa7VrtDJjramDyr);
   background-position: 0% 55%;
   background-size: 120vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: grayscale(20%);
+  color: white;
 }
 
 #main_contact {
@@ -83,7 +78,7 @@ export default {
   padding: 50px 0;
 }
 .contact {
-  background: rgba(27, 31, 34, 0.8);
+  background: rgba(36, 37, 42, 0.9);
   width: 640px;
   margin: 0 auto 50px auto;
   max-width: 97%;
