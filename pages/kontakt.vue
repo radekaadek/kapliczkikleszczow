@@ -79,12 +79,13 @@ export default {
 }
 
 #main_contact {
-  height: calc(100vh - 5vh - 100px - 60px);
+  height: calc(100vh - 158px);
+  padding: 50px 0;
 }
 .contact {
   background: rgba(27, 31, 34, 0.8);
   width: 640px;
-  margin: 50px auto;
+  margin: 0 auto 50px auto;
   max-width: 97%;
   border-radius: 4px;
   padding: 55px 30px;
