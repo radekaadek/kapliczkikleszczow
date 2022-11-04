@@ -1,7 +1,7 @@
 <template>
     <header>
-        <div class="inner_header">
-            <div class="logo_container">
+        <nav class="navbar">
+            <div class="ekapliczki">
                 <Logo />
             </div>
             <ul class="navigation">
@@ -21,7 +21,7 @@
             <div class="logo_kleszczow">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/POL_gmina_Kleszcz%C3%B3w_COA.svg" alt="logo gminy kleszczów">   
             </div>
-        </div>
+        </nav>
     </header>
 </template>
  
@@ -34,13 +34,47 @@
     box-sizing: border-box;
 }
 
-header {
+.navbar {
+    background: linear-gradient(to right, #081562, #4e0808);
+    color: white;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header {
     width: 100%;
     height: max(100px, 2vh);
     background: linear-gradient(to right, rgb(8, 21, 98), rgb(78, 8, 8));
 }
 
-.inner_header {
+.navbar {
     width: 100%;
     height: 100%;
     display: flex;
@@ -49,19 +83,16 @@ header {
     margin: 0 auto;
 }
 
-.logo_container {
+.ekapliczki {
     height: 100%;
     padding: 0.6vw;
-    flex-grow: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .navigation {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
     height: 100%;
 }
 
@@ -85,6 +116,7 @@ header {
     height: 100%;
     padding: 0.6vw;
     display: flex;
+    justify-content: flex-end;
 
 }
 @media screen and (max-width: 1200px){
@@ -110,6 +142,6 @@ header {
     .logo_container{
         display: none;
     }
-}
+} */
 
 </style>
