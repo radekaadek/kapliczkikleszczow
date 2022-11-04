@@ -195,7 +195,7 @@ form .icons a:hover {
 }
 
 @media (max-width: 480px) {
-  main {
+  #main_contact {
     height: auto;
   }
   form .half {
