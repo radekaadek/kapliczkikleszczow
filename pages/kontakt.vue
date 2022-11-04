@@ -70,7 +70,7 @@ export default {
 }
 
 #background_main {
-  background-image: url("https://res.cloudinary.com/dorbvgguu/image/upload/v1667592764/BG_contact_vzfza5.jpg");
+  background-image: url("https://drive.google.com/uc?export=download&id=16p-qgmyEr0JA5Av_NKa7VrtDJjramDyr");
   background-position: 0% 55%;
   background-size: 120vw;
   background-repeat: no-repeat;
