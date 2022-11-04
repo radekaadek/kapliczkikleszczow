@@ -4,7 +4,7 @@
       <Bar />
       <div id="background_main">
         <main id="main_contact">
-          <form action="">
+          <form class="contact" action="">
             <div class="title">
               <h2>Kontakt</h2>
             </div>
@@ -70,10 +70,10 @@ export default {
   filter: grayscale(20%);
 }
 
-main {
+#main_contact {
   height: calc(100vh - 5vh - 100px - 58px);
 }
-form {
+.contact {
   background: rgba(27, 31, 34, 0.8);
   width: 640px;
   margin: 50px auto;
