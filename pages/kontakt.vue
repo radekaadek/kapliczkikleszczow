@@ -64,18 +64,14 @@ export default {
   font-family: sans-serif;
 }
 
-#body_contact {
-  background-color: black;
-  color: white;
-}
-
+#body_contact,
 #background_main {
-  background-image: url("https://drive.google.com/uc?export=download&id=16p-qgmyEr0JA5Av_NKa7VrtDJjramDyr");
-  background-position: 0% 55%;
-  background-size: 120vw;
+  background-image: url(https://drive.google.com/uc?export=download&id=1YWh8YtVftIuEp3Cr_upT4YTrLcU-FmxR);
+  background-position: 0 65%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  filter: grayscale(20%);
+  color: white;
 }
 
 #main_contact {
@@ -83,7 +79,7 @@ export default {
   padding: 50px 0;
 }
 .contact {
-  background: rgba(27, 31, 34, 0.8);
+  background: rgba(36, 37, 42, 0.9);
   width: 640px;
   margin: 0 auto 50px auto;
   max-width: 97%;
@@ -161,7 +157,8 @@ form .action input {
   padding: 0 20px 0 22px;
   margin-right: 10px;
 }
-input, textarea{
+input,
+textarea {
   color: white;
 }
 
@@ -194,13 +191,6 @@ form .icons a:hover {
 @media (max-height: 815px) {
   #main_contact {
     height: auto;
-  }
-}
-
-@media (max-width: 960px) {
-  #background_main {
-    background-position: 50% 30%;
-    background-size: cover;
   }
 }
 

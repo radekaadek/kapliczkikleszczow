@@ -39,7 +39,7 @@
 
 .navbar {
   height: 100px;
-  background-color: #24252a;
+  background-color: rgba(36, 37, 42, 0.9);
   color: white;
   display: flex;
   justify-content: space-around;
