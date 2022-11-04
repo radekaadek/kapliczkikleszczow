@@ -70,7 +70,6 @@ export default {
 }
 
 #background_main {
-  padding: 5vh 0 0 0;
   background-image: url("/static/BG_contact.jpg");
   background-position: 0% 55%;
   background-size: 120vw;
@@ -80,7 +79,7 @@ export default {
 }
 
 #main_contact {
-  height: calc(100vh - 5vh - 100px - 58px);
+  height: calc(100vh - 5vh - 100px - 60px);
 }
 .contact {
   background: rgba(27, 31, 34, 0.8);
