@@ -7707,6 +7707,15 @@ export default {
 </script>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7716,7 +7725,7 @@ body {
 }
 
 main {
-  max-height: calc(100vh - 100px - 58px);
+  height: calc(100vh - 100px - 58px);
 }
 
 h1 {
