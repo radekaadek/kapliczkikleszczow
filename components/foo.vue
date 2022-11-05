@@ -5,7 +5,7 @@ let current_year = new Date().getFullYear();
 
 <template>
     <footer>
-        <p>Copyright © {{current_year}}, Plöhnen Software</p>
+        <p>Copyright © {{current_year}}, Plöhnen Software, TMKZ</p>
     </footer>
 </template>
 
