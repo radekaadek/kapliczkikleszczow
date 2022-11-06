@@ -1,10 +1,11 @@
 <template>
+
   <body id="body_contact">
     <div>
       <Bar />
       <div id="background_main">
         <main id="main_contact">
-          <form class="contact" action="">
+          <form class="contact" onsubmit= "return false">
             <div class="title">
               <h2>Kontakt</h2>
             </div>
@@ -23,7 +24,7 @@
               <textarea name="" id="message"></textarea>
             </div>
             <div class="action">
-              <input type="submit" value="Wyślij" />
+              <button id="submiter" type="submit" value="Wyślij" @click="submit">Wyślij</button>
               <input type="reset" value="Reset" />
             </div>
           </form>
@@ -34,9 +35,7 @@
   </body>
 </template>
 
-<script lang="ts"></script>
-
-<script>
+<script lang="js">
 export default {
   head() {
     return {
@@ -51,8 +50,22 @@ export default {
       ],
     };
   },
-};
-</script>
+  methods: {
+    submit() {
+      const http = new XMLHttpRequest();
+      const name = document.getElementById('name')
+      const email = document.getElementById('email')
+      const message = document.getElementById('message')
+      let url = `https://kapliczkikleszczowmail.herokuapp.com/kontakt?name=${name.value}&email=${email.value}&content=${message.value}`;
+      http.open("POST", url);
+      http.send();
+      http.onreadystatechange = (e) => {
+        console.log(http.responseText)
+      }
+
+    },
+  },
+};</script>
 
 <style>
 * {
@@ -78,6 +91,7 @@ export default {
   height: calc(100vh - 158px);
   padding: 50px 0;
 }
+
 .contact {
   background: rgba(36, 37, 42, 0.9);
   width: 640px;
@@ -144,7 +158,8 @@ form .action {
   margin-bottom: 32px;
 }
 
-form .action input {
+form .action input,
+#submiter {
   background: transparent;
   border-radius: 4px;
   border: 1px solid white;
@@ -157,12 +172,13 @@ form .action input {
   padding: 0 20px 0 22px;
   margin-right: 10px;
 }
+
 input,
 textarea {
   color: white;
 }
 
-form .action input[type="submit"] {
+#submiter {
   background: white;
   color: black;
 }
@@ -198,16 +214,20 @@ form .icons a:hover {
   #main_contact {
     height: auto;
   }
+
   form .half {
     flex-direction: column;
   }
+
   form .half .item {
     width: 100%;
   }
+
   form .action {
     display: flex;
     flex-direction: column;
   }
+
   form .action input {
     margin-bottom: 10px;
     width: 100%;
