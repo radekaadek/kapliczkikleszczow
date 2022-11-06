@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script>
+<script lang="js">
 export default {
   head: {
     title: "Zgłoś kapliczkę",
@@ -7671,9 +7671,65 @@ export default {
       }),
         (window.L = t);
     });
-    //# sourceMappingURL=leaflet.js.map
 
-    console.log("mounted");
+
+    function popContentGenerator(e) {
+    const popupContent = document.querySelector('.leaflet-popup-content');
+    const container = document.createElement('div');
+    const label = document.createElement('span');
+    const coords = document.createElement('span');
+    const button = document.createElement('button');
+    const name = document.createElement('input');
+    const email = document.createElement('input');
+    const message = document.createElement('textarea');
+    const mail_info = document.createElement('span');
+
+    container.classList.add('lokalizacja');
+    button.classList.add('butonik');
+    name.classList.add('formarea');
+    email.classList.add('formarea');
+    message.classList.add('formarea');
+    mail_info.classList.add('mail_info');
+
+    container.style.display = 'flex';
+    container.style.flexDirection = 'column';
+    label.style.fontWeight = 'bold';
+    mail_info.style.display = 'none';
+
+    label.textContent = 'Współrzędne:';
+    coords.textContent = e.latlng.lat.toString() + ', ' + e.latlng.lng.toString()
+    button.textContent = 'Zgłoś kapliczkę';
+    mail_info.textContent = 'Proszę potwierdzić, wiadomość z linkiem wysłana na e-mail📧';
+
+    container.appendChild(label);
+    container.appendChild(coords);
+    container.appendChild(name);
+    container.appendChild(email);
+    container.appendChild(message);
+    container.appendChild(button);
+    container.appendChild(mail_info);
+    popupContent.replaceChildren(container);
+
+    button.addEventListener('click', () => {
+        const http = new XMLHttpRequest();
+        const emailRegex = new RegExp(/[a-zA-Z.\d]+@[a-zA-Z.]+\.[a-zA-Z\d]{2,4}/, "gm");
+
+        if (emailRegex.test(email.value) || email.value.length == 0 || message.value.length == 0 || name.value.length == 0) {
+            let url = `https://kapliczkikleszczowmail.herokuapp.com/kapliczka?name=${name.value}&latitude=${e.latlng.lat.toString()}&email=${email.value}&content=${message.value}&longitude=${e.latlng.lng.toString()}`;
+            http.open("POST", url);
+            http.send();
+            http.onreadystatechange = (d) => {
+                console.log(http.responseText)
+            }
+            mail_info.style.display = 'inline-block';
+        }
+        else {
+            alert('Niepoprawny adres e-mail lub brak wymaganych pól')
+        }
+
+    });
+}
+
     const map = L.map("map").setView([51.223019, 19.304054], 13);
     const tiles = L.tileLayer(
       "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -7682,10 +7738,10 @@ export default {
       }
     ).addTo(map);
 
-    const marker = L.marker([51.216938, 19.302464])
-      .addTo(map)
-      .bindPopup("<b>Kleszczów</b>")
-      .openPopup();
+    // const marker = L.marker([51.216938, 19.302464])
+    //   .addTo(map)
+    //   .bindPopup("<b>Kleszczów</b>")
+    //   .openPopup();
 
     let popup = L.popup()
       .setLatLng([51.216938, 19.302464])
@@ -7693,23 +7749,18 @@ export default {
       .openOn(map);
 
     function onMapClick(e) {
-      popup
-        .setLatLng(e.latlng)
-        .setContent(
-          `<div class="lokalizacja"> <b>Współrzędne:</b></br></br> ${e.latlng.lat.toString()}; ${e.latlng.lng.toString()}</div><form class="lok"><input type="submit" value="Zgłoś kapliczkę" class="butonik"/></form>`
-        )
-        .openOn(map);
+      popup.setLatLng(e.latlng).setContent("").openOn(map);
+      popContentGenerator(e);
     }
-    console.log("mounted2");
     map.on("click", onMapClick);
   },
 };
 </script>
 
+
+
+
 <style>
-
-
-
 * {
     margin: 0;
     padding: 0;
