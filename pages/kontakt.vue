@@ -56,13 +56,19 @@ export default {
       const name = document.getElementById('name')
       const email = document.getElementById('email')
       const message = document.getElementById('message')
+      const emailRegex = new RegExp(/[a-zA-Z.\d]+@[a-zA-Z.]+\.[a-zA-Z\d]{2,4}/, "gm");
+
+      if (emailRegex.test(email.value)||email.value.length==0||message.value.length==0||name.value.length==0) {
       let url = `https://kapliczkikleszczowmail.herokuapp.com/kontakt?name=${name.value}&email=${email.value}&content=${message.value}`;
       http.open("POST", url);
       http.send();
       http.onreadystatechange = (e) => {
         console.log(http.responseText)
       }
-      document.querySelector('form.contact').innerHTML = `<h2>Proszę potwierdzić, wiadomość z linkiem wysłana na e-mail📧</h2>`
+      document.querySelector('form.contact').innerHTML = `<h2>Proszę potwierdzić, wiadomość z linkiem wysłana na e-mail📧</h2>`}
+      else {
+        alert('Niepoprawny adres e-mail lub brak wymaganych pól')
+      }
 
     },
   },
