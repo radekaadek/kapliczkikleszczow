@@ -7682,20 +7682,24 @@ export default {
     const name = document.createElement('input');
     const email = document.createElement('input');
     const message = document.createElement('textarea');
+    const mail_info = document.createElement('span');
 
     container.classList.add('lokalizacja');
     button.classList.add('butonik');
     name.classList.add('formarea');
     email.classList.add('formarea');
     message.classList.add('formarea');
+    mail_info.classList.add('mail_info');
 
     container.style.display = 'flex';
     container.style.flexDirection = 'column';
     label.style.fontWeight = 'bold';
+    mail_info.style.display = 'none';
 
     label.textContent = 'Współrzędne:';
     coords.textContent = e.latlng.lat.toString() + ', ' + e.latlng.lng.toString()
     button.textContent = 'Zgłoś kapliczkę';
+    mail_info.textContent = 'Proszę potwierdzić, wiadomość z linkiem wysłana na e-mail📧';
 
     container.appendChild(label);
     container.appendChild(coords);
@@ -7703,6 +7707,7 @@ export default {
     container.appendChild(email);
     container.appendChild(message);
     container.appendChild(button);
+    container.appendChild(mail_info);
     popupContent.replaceChildren(container);
 
     button.addEventListener('click', () => {
@@ -7710,13 +7715,13 @@ export default {
         const emailRegex = new RegExp(/[a-zA-Z.\d]+@[a-zA-Z.]+\.[a-zA-Z\d]{2,4}/, "gm");
 
         if (emailRegex.test(email.value) || email.value.length == 0 || message.value.length == 0 || name.value.length == 0) {
-            let url = `https://kapliczkikleszczowmail.herokuapp.com/kapliczka?name=${name.value}&latitude=${e.latlng.lat.toString()}&email=${email.value}&content=${message.value}&longtitude=${e.latlng.lng.toString()}`;
+            let url = `https://kapliczkikleszczowmail.herokuapp.com/kapliczka?name=${name.value}&latitude=${e.latlng.lat.toString()}&email=${email.value}&content=${message.value}&longitude=${e.latlng.lng.toString()}`;
             http.open("POST", url);
             http.send();
-            http.onreadystatechange = (e) => {
+            http.onreadystatechange = (d) => {
                 console.log(http.responseText)
             }
-            // document.querySelector('form.contact').innerHTML = `<h2>Proszę potwierdzić, wiadomość z linkiem wysłana na e-mail📧</h2>`
+            mail_info.style.display = 'inline-block';
         }
         else {
             alert('Niepoprawny adres e-mail lub brak wymaganych pól')
