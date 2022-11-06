@@ -62,6 +62,7 @@ export default {
       http.onreadystatechange = (e) => {
         console.log(http.responseText)
       }
+      document.querySelector('form.contact').innerHTML = `<h2>Proszę potwierdzić, wiadomość z linkiem wysłana na e-mail📧</h2>`
 
     },
   },
