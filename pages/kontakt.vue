@@ -1,5 +1,5 @@
 <template>
-
+  <Loader />
   <body id="body_contact">
     <div>
       <Bar />
