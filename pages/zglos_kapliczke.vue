@@ -7690,11 +7690,16 @@ export default {
     email.classList.add('formarea');
     message.classList.add('formarea');
     mail_info.classList.add('mail_info');
+    label.classList.add('label')
 
     container.style.display = 'flex';
     container.style.flexDirection = 'column';
     label.style.fontWeight = 'bold';
     mail_info.style.display = 'none';
+
+    name.placeholder = "Imię i nazwisko";
+    email.placeholder = "E-mail";
+    message.placeholder = "Wiadomość";
 
     label.textContent = 'Współrzędne:';
     coords.textContent = e.latlng.lat.toString() + ', ' + e.latlng.lng.toString()
@@ -7797,6 +7802,41 @@ h1 {
 .lokalizacja{
     color: black;
 }
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+  background-color: rgba(36, 37, 42, 0.9);
+  color: #fff;
+}
+
+.leaflet-popup-close-button span{
+    color: lightcoral;
+    font-size: 25px;
+    transform: translate(-10px, 6px);
+    position: fixed;
+}
+
+.leaflet-popup-content-wrapper span{
+  color: #fff;
+  margin: 5px;
+}
+
+.formarea{
+  margin: 5px;
+  padding: 8px;
+  background: transparent;
+  border: 0.5px solid white;
+  border-radius: 8px;
+  resize: none;
+}
+
+.formarea::placeholder{
+  padding: 0 5px;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: center;
+  color: lightgray;
+}
+
 .butonik {
   appearance: button;
   backface-visibility: hidden;

@@ -183,6 +183,7 @@ form .action input,
 input,
 textarea {
   color: white;
+  resize: none;
 }
 
 #submiter {
