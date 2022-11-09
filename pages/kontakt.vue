@@ -1,5 +1,5 @@
 <template>
-
+  <Loader />
   <body id="body_contact">
     <div>
       <Bar />
@@ -183,6 +183,7 @@ form .action input,
 input,
 textarea {
   color: white;
+  resize: none;
 }
 
 #submiter {
