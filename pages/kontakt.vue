@@ -58,7 +58,7 @@ export default {
       const message = document.getElementById('message')
       const emailRegex = new RegExp(/[a-zA-Z.\d]+@[a-zA-Z.]+\.[a-zA-Z\d]{2,4}/, "gm");
 
-      if (emailRegex.test(email.value)||email.value.length==0||message.value.length==0||name.value.length==0) {
+      if (emailRegex.test(email.value) && email.value.length > 0 && message.value.length > 0 && name.value.length > 0) {
       let url = `https://kapliczkikleszczowmail.herokuapp.com/kontakt?name=${name.value}&email=${email.value}&content=${message.value}`;
       http.open("POST", url);
       http.send();

@@ -1,4 +1,5 @@
 <template>
+    <Loader />
     <div>
         <Bar />
         <main>
