@@ -7863,6 +7863,7 @@ h1 {
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 100%;
+  color: rgb(255, 255, 255);
 }
 
 .leaflet-popup-content {
