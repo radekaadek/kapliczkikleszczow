@@ -1,2 +1,2 @@
 # kapliczki
-Strona do kapliczek na terenie Kleszczowa i etc.
+Interaktywny spis kapliczek na terenie Gminy Kleszczów i etc.

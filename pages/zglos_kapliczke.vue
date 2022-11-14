@@ -7773,6 +7773,7 @@ export default {
     text-decoration: none;
     box-sizing: border-box;
     font-family: sans-serif;
+    outline: none;
 }
 
 body {
@@ -7827,6 +7828,7 @@ h1 {
   border: 0.5px solid white;
   border-radius: 8px;
   resize: none;
+  color: white;
 }
 
 .formarea::placeholder{
